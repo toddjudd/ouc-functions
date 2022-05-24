@@ -14,15 +14,15 @@ const httpTrigger: AzureFunction = async function (
   };
   const body = {
     message: {
-      subject: `🚩 New Contact Us Request From: ${req.body?.firstName} ${req.body?.lastName} 👏`,
+      subject: `🚩 New Contact Us Request From: ${req.body?.fullName} 👏`,
       body: {
         contentType: 'Text',
-        content: `New message from: ${req.body?.email}\n\n${req.body?.message}`,
+        content: `New message from: ${req.body?.fullName}\n\nEmail: ${req.body?.email}\n\nPhoneNumber ${req.body?.phoneNumber}\n\n${req.body?.message}`,
       },
       toRecipients: [
         {
           emailAddress: {
-            address: process.env.CONTACTUS_EMAIL,
+            address: process.env.CONTACT_US_TO_EMAIL,
           },
         },
       ],
@@ -31,7 +31,7 @@ const httpTrigger: AzureFunction = async function (
   };
   const endpoint =
     process.env.GRAPH_ENDPOINT +
-    'v1.0/users/f01604ed-4e9c-419e-b224-d413dac07753/sendMail';
+    `v1.0/users/${process.env.CONTACT_US_FROM_ID}/sendMail`;
   try {
     const response = await axios.post(endpoint, body, options);
     context.res = {
