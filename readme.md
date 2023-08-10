@@ -140,8 +140,12 @@ npm i -g azure-functions-core-tools
 
 ## Deployment
 
-Deployment is done in VS code by right clicking on the function and selecting
-Deploy to Function App.
+Deployment is done with Github Actions. The workflow is located in
+`.github/workflows/master_ouc-functions.yml`. The workflow will run on push to
+the main branch.
+
+Deployment can be done manually in VS code by right clicking on the function and
+selecting Deploy to Function App.
 
 Environment variables are set in the Azure Portal. Funciton App >
 `Your Function Name` > Settings > Configuration > Application Settings.
