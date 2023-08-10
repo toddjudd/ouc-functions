@@ -136,6 +136,18 @@ npm i -g azure-functions-core-tools
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- DEPLOYMENT -->
+
+## Deployment
+
+Deployment is done in VS code by right clicking on the function and selecting
+Deploy to Function App.
+
+Environment variables are set in the Azure Portal. Funciton App >
+`Your Function Name` > Settings > Configuration > Application Settings.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- LICENSE -->
 
 ## License
