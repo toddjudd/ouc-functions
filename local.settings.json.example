@@ -1,0 +1,15 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobs.sendMail.Disabled": "false",
+    "AzureWebJobs.sendMail2.Disabled": "true",
+    "TENANT_ID": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "CLIENT_ID": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "CLIENT_SECRET": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "AAD_ENDPOINT": "https://login.microsoftonline.com/",
+    "GRAPH_ENDPOINT": "https://graph.microsoft.com/",
+    "CONTACT_US_FROM_ID": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "CONTACT_US_TO_EMAIL": "user@example.com"
+  }
+}
