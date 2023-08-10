@@ -240,5 +240,5 @@ Project Link:
   https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com
 [Azure.com]:
-  https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=azure&logoColor=white
+  https://img.shields.io/badge/azure-0769AD?style=for-the-badge&logo=azure&logoColor=white
 [Azure-url]: https://Azure.com
